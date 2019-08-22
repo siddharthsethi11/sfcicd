@@ -1,0 +1,20 @@
+Manifest-Version: 1.0.0.201908210703
+Bundle-SymbolicName: SalesforceCon.module
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BWCE-Edition-Target: docker
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.salesforce)",com.tibco.bw.sharedreso
+ urce.model; filter:="(name=bw.httpconnector)",com.tibco.bw.sharedreso
+ urce.model; filter:="(name=bw.salesforceconnection)",com.tibco.bw.bin
+ ding.model; filter:="(name=bw.rest)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.2.0 V26 2016-11-16
+Bundle-Name: SalesforceCon Module
+Bundle-Version: 1.0.0.201908210703
+Bundle-ClassPath: .
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+

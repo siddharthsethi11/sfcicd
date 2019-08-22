@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_6SD8MINDEeeKzawrcKDXKA" targetNamespace="http://tns.tibco.com/bw/composite/SalesforceCon.module" name="SalesforceCon.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_wFmocIO1EeeKzawrcKDXKA" name="salesforce" promote="ComponentProcess/salesforce">
+    <sca:interface.wsdl xmi:id="_wFyOoIO1EeeKzawrcKDXKA" interface="http://xmlns.example.com/20170817080216PLT#wsdl.interface(salesforce)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_wF48UIO1EeeKzawrcKDXKA" name="RestService" path="/salesforce" docBasePath="http://localhost:7777/SalesforceCon.module" docResourcePath="salesforce" basePath="/" connector="salesforcecon.module.salesforce" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/salesforcecon.module.Process-salesforce.json">
+      <operation xmi:id="_wF6KcIO1EeeKzawrcKDXKA" operationName="post" nickname="post-salesforce" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_wGeLIIO1EeeKzawrcKDXKA"/>
+      <advancedConfig xmi:id="_2mNssBoiEem9QP_V2Vhh0w" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_wF6xgIO1EeeKzawrcKDXKA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_6wN30INDEeeKzawrcKDXKA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6wT-cINDEeeKzawrcKDXKA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6wXBwINDEeeKzawrcKDXKA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6wasIINDEeeKzawrcKDXKA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6wdvcINDEeeKzawrcKDXKA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6wgLsINDEeeKzawrcKDXKA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_6wjPAINDEeeKzawrcKDXKA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-1kjoINDEeeKzawrcKDXKA" name="salesforce.wsdl" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_M8-cYIO2EeeKzawrcKDXKA" name="salesforce.xsd" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_M-PnsIO2EeeKzawrcKDXKA" name="metadata.xsd" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ByjCQBojEem9QP_V2Vhh0w" name="username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EYLnwBojEem9QP_V2Vhh0w" name="password" type="property:password" scaext:simpleValue="#!xjgANF4vTRlPCapzZ7BLDA==" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_6ZKpwINDEeeKzawrcKDXKA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6ZKpwYNDEeeKzawrcKDXKA" processName="salesforcecon.module.Process"/>
+    <sca:service xmi:id="_wFeFkIO1EeeKzawrcKDXKA" name="salesforce">
+      <sca:interface.wsdl xmi:id="_wFi-EIO1EeeKzawrcKDXKA" interface="http://xmlns.example.com/20170817080216PLT#wsdl.interface(salesforce)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/salesforcecon.module.Process-salesforce.json",
+        "type": "generated"
+    }]
+}

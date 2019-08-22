@@ -1,0 +1,66 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8989",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/salesforce" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-salesforce",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Contact"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Salesforce_Response to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Salesforce_Response"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Salesforce_Response" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Contact" : {
+      "type" : "object",
+      "properties" : {
+        "FullName" : {
+          "type" : "string"
+        },
+        "Address" : {
+          "type" : "string"
+        },
+        "DoB" : {
+          "type" : "string"
+        },
+        "Email" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

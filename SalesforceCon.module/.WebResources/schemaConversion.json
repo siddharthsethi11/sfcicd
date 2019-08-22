@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/SalesforceCon.module/Service Descriptors/salesforcecon.module.Process-salesforce.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1503020051440"
+    },
+    {
+        "jsonSchemaLocation": "/SalesforceCon.module/Service Descriptors/salesforcecon.module.Process-salesforce.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1503020187598"
+    }
+]}
