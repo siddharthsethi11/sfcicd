@@ -114,7 +114,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SalesforceCon.module//username</name>
-			<value>sbhutkar@shell.com</value>
+			<value>sbhutkar@shl.com</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
