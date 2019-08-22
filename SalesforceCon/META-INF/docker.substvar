@@ -18,7 +18,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>password</name>
-			<value></value>
+			<value>#!jzv7TKeqm8m8RNmNn7pKuSxXPzyukw77STXNf/KZ+0aysRo5NuHqgU99X/0XVsBjskv/b9xlIow7rA3MLKVnpIFDFX7bopff68dfzHgq1KY=</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
@@ -106,19 +106,19 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SalesforceCon.module//password</name>
-			<value>%%password%%</value>
+			<value>#!nRxQvOyJv6ujUhGroT/pVhZNkOkoNDBqwNVDfj1Gt2Zpnho5rW/X8XiN0sJjmL8CZK93YNlmetn3BgylivgZ3vaMLnv0qjtctK6CJS2CfgE=</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
-			<isOverride>true</isOverride>
+			<isOverride>false</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//SalesforceCon.module//username</name>
-			<value>sbhutkar@shl.com</value>
+			<value>#username#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>

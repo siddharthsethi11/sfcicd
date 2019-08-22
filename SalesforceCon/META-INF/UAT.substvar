@@ -11,6 +11,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>username</name>
+			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -18,7 +19,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>password</name>
-			<value>#!C06ETTs7Xf7w2AJY4fCH5SRRacWqm0lHKw6SzDBV8AZwawVdOV04bnpKmuqg0DVb6Iwx+9hvJDrCnt4LvoIVy66YERJOSBKEw1eCjJc78Dk=</value>
+			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
@@ -106,7 +107,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SalesforceCon.module//password</name>
-			<value>%%password%%</value>
+			<value>#!jkrQ/NpOzDB7Y+OlrGk8sREoTSfb89rLc2o45RkIbvHxxrELXiDWVe6Gf59PUIDfmKohXFAmc7DpnRf3kKqNyYavH+WtlpUxrOMPAa7phzw=</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
@@ -114,11 +115,11 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SalesforceCon.module//username</name>
-			<value>sbhutkar@shl.com</value>
+			<value>sbhutkar@shell.com</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>

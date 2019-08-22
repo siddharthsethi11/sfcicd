@@ -12,10 +12,11 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <project.type>Docker</project.type>
+    <docker.env.property.file>/home/tibco/k8s/SalesforceCon/docker-host-env-dev.properties</docker.env.property.file>
     <bw.Home></bw.Home>
-    <docker.property.file>docker-dev.properties</docker.property.file>
+    <project.type>Docker</project.type>
     <failIfNoTests>false</failIfNoTests>
+    <docker.property.file>docker-dev.properties</docker.property.file>
     <tibco.Home></tibco.Home>
   </properties>
   <build>
@@ -41,6 +42,7 @@
         <configuration>
           <files>
             <file>${docker.property.file}</file>
+            <file>${docker.env.property.file}</file>
           </files>
         </configuration>
       </plugin>
@@ -83,7 +85,9 @@
                 <namingStrategy>alias</namingStrategy>
                 <ports>
                   <port>${bwdocker.port.p0}</port>
+                  <port>${bwdocker.port.p1}</port>
                 </ports>
+                <envPropertyFile>${docker.env.property.file}</envPropertyFile>
               </run>
             </image>
           </images>
